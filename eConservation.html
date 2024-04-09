@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_sub.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Wildlife in Sri Lanka</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body x-data="main">
+    <header>
+        <img class="logo" src="sri-lankan-wildlife-high-resolution-logo-transparent (1).png" alt="">
+        <nav>
+            
+            <section class="wrapper">
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" margin-right="-100px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="eHome.html">Home</a></li>
+                    <li><a href="eIntro.html">Intro</a></li>
+                    <li><a href="eConservation.html">Conservation</a></li>
+                    <li><a href="eLeopard.html">Leopard</a></li>
+                    <li><a href="eAnimals.html">Animals</a></li>
+                    <li><a href="eYala.html">Yala</a></li>
+                    <li><a href="eWilpathu.html">Wilpathu</a></li>
+                    <li><a href="login.html">Login</a></li>
+          
+
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"><a href="eHome.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="eIntro.html">Intro</a></li>
+                    <li class="hideOnMobile"><a href="eConservation.html">Conservation</a></li>
+                    <li class="hideOnMobile"><a href="eLeopard.html">Leopard</a></li>
+                    <li class="hideOnMobile"><a href="eAnimals.html">Animals</a></li>
+                    <li class="hideOnMobile"><a href="eYala.html">Yala</a></li>
+                    <li class="hideOnMobile"><a href="eWilpathu.html">Wilpathu</a></li>
+                    <li class="hideOnMobile"><a href="login.html">Login</a></li>
+                    
+                    <li onclick="showSidebar()" class="menuButton"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </section>
+        </nav>
+        
+    </header>
+
+    <main class="cons_main">
+
+
+        <h1 class="cons_heading1" id="heading" x-text="heading" contenteditable="true"></h1>
+        <section class="cons_intro_text">
+            <p id="paragraph1" x-text="paragraph1" contenteditable="true"></p>.
+
+        </section>
+
+        <section class="container">
+            <section class="row">
+              <h1 class="heading" contenteditable="true">
+           
+              </h1>
+          
+              <section class="box-slider">
+                <section class="img">
+                  <p class="info" contenteditable="true">Elephants</p>
+                  <img src="cons1.webp" alt="elephants">
+                </section>
+                <section class="img">
+                  <p class="info" contenteditable="true">Flamingo</p>
+                  <img src="cons5.jpg" alt="Flamingo">
+                </section>
+          
+                <section class="img">
+                  <p class="info" contenteditable="true">Conservation</p>
+                  <img src="cons7.jpg" alt="conservation">
+                </section>
+          
+                <section class="img">
+                  <p class="info" contenteditable="true">Turtle</p>
+                  <img src="cons4.jpeg" alt="Turtle">
+                </section>
+          
+                <section class="img">
+                  <p class="info" contenteditable="true">Leopard</p>
+                  <img src="cons3.webp" alt="leopard">
+                </section>
+          
+            </section>
+          
+        </section>
+    </section>
+
+            
+            
+        </section>
+        <section class="phone_gallery">
+            <img class="phone_gallery_pic" src="cons1.webp" alt="">
+            <img class="phone_gallery_pic" src="cons5.jpg" alt="">
+            <img class="phone_gallery_pic" src="cons7.jpg" alt="">
+            <img class="phone_gallery_pic" src="cons4.jpeg" alt="">
+          
+          
+
+
+        </section>
+
+
+        
+       
+    </main>
+    <section class="maps">
+
+        <h1 class="cons_map_h1">Location</h1>
+        <iframe class="cons_map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4056008.4451657515!2d75.04187601250004!3d6.897092700000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1703958769767!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+   
+    <footer>
+        <section class="newsletterSub">
+            <form id="newsletterForm">
+              <input class="email" type="email" id="email" placeholder="Enter your email">
+              <button type="submit">Subscribe</button>
+            </form>
+            <section id="message"></section>
+        </section>
+        <section class="footerContainer">
+            <section class="socialIcons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </section>
+            <section class="footerNav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                </ul>
+            </section>
+            
+        </section>  
+        <section class="footerBottom">
+            <p>Copyright &copy;2023; Designed by <span class="designer">Ravindu</span></p>
+        </section>
+        
+    </footer>
+    
+    <script src="./conservation.js"></script>
+    <script src="newsletter.js" defer></script>
+    </body>
+
+</html>
+

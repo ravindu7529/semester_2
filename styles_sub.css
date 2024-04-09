@@ -1,0 +1,825 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+
+nav{
+    width: 100%;
+    height: 120px;
+    background-color:#556b2f;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    position: initial;
+    margin-top: none;
+    
+}
+
+
+nav ul{
+list-style: none;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin-left: 85px;
+
+}
+
+ul li{
+    height: 72px;
+    margin-top: 20px;
+}
+
+ul li a{
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Roboto";
+    color: #1e1e1e;
+    font-weight: 500;
+
+}
+
+ul li a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.567);
+    box-shadow: -10px 0 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar li a{
+    width: 100%;
+}
+
+
+.logo{
+    width: 80px;
+    position: absolute;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.menuButton{
+    display: none;
+}
+
+
+@media(max-width:770px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menuButton{
+        display: block;
+    }
+    .animals_main {
+        font-family: 'Roboto';
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.78;
+        position: static;
+        position: relative;
+        margin-bottom: 50px;
+    
+}
+}
+    
+@media(max-width:770px){
+    .sidebar{
+        width: 100%;
+    }
+    body{
+        width: 100%;
+    }
+}
+
+
+body{
+    background-color: white;
+    font-family: 'roboto';
+    overflow-x: hidden;
+    
+}
+
+main{
+    margin: 0 80px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.introduction{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.national-parks{
+    margin-top: 20px;
+}
+.heading{
+    font-size:x-large;
+    position: relative;
+    margin-right: 400px;
+    top:100px;
+    text-decoration: none;
+    color: #000000;
+
+}
+.heading1{
+    font-size:35px;
+    position: relative;
+    margin-bottom: 20px;
+    text-decoration: none;
+
+
+}
+.heading:hover{
+    color: #473DC8;
+}
+.intro_text{
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.78;
+    margin-top: 10px;
+    position: relative;
+    margin-right: 550px;
+    top: 150px;
+
+}
+
+.intro_image{
+    display: flex;
+    width: 500px;
+    height:300px ;
+    position: relative;
+    left: 810px;
+    bottom: 40px;
+    border: 4px solid black;
+
+}
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    color: black;
+    font-size: 2em;
+    opacity: 0.9;
+
+}
+
+/*hover effect on social media*/
+.socialIcons a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+}
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #000;
+
+}
+
+.footerBottom p{
+    color: white;
+}
+.desiger{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width:700px) {
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+}
+.intro_table {
+    font-family: "Roboto", sans-serif;
+    background-color: #404040; /* Darker background color for better contrast */
+    text-align: center;
+    width: 80%; /* Use percentage for responsiveness */
+    max-width: 1000px; /* Set a maximum width for larger screens */
+    height: 400px;
+    margin: 180px auto 50px auto; /* Consolidate margin properties */
+    border-bottom: 3px solid black;
+    border-radius: 10px; /* Add rounded corners for a modern look */
+    overflow: hidden; /* Ensure rounded corners are applied properly */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow for depth */
+}
+
+.intro_tableHead {
+    background-color: #606060; /* Slightly lighter gray for the header */
+    color: #ffffff; /* White text for better visibility */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.intro_tb {
+    background-color: #f2f2f2; /* Lighter gray for table rows */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.intro_tb:hover {
+    background-color: #888383; /* Darker gray on hover for a highlight effect */
+}
+
+.cons_intro_text{
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.78;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px;
+    margin-bottom: 100px;
+
+}
+
+.cons_heading1{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cons_main{
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+
+}
+
+.gallery{
+    width: 1000px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+    
+}
+.column{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 20px;
+    align-content: center;
+
+}
+.photo img{
+    align-content: center;
+    align-items: center;
+    width: 190px;
+    height: 120px;
+    border-radius: 20px;
+    object-fit: fill;
+
+}
+
+.gallery img:hover{
+    transform: scale(2);
+    border-radius: 0px;
+    background-color: black;
+    padding: 5px;
+    transition: ease 0.5s;
+
+}
+
+.phone_gallery{
+    display: none;
+        
+}
+
+.youtube_video_leopard{
+    width: 1400px;
+    height: 800px;
+}
+
+
+
+
+@media(max-width:1423px){
+    .gallery{
+        flex-direction: row;
+        display: none;
+    }
+
+    .phone_gallery{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+
+    }
+
+    .phone_gallery img{
+        padding: 20px;
+
+        
+    }
+
+    .youtube_video_leopard{
+        width: 280px;
+        height: 240px;
+    }
+    
+}
+
+
+.maps{
+    margin-top: 75px;
+}
+.cons_map_h1{
+    color:rgb(31, 31, 31);
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: underline black;
+}
+
+.cons_map{
+    width: 100%;
+    height: 80vh;
+}
+
+/*leopard*/ 
+
+.leopards_heading{
+    font-style: 'Roboto';
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.leopards_subheading{
+    margin-top: 100px;
+    margin-bottom: 7cqmin;
+    font-size: x-large;
+}
+
+.leopard_venue{
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.78;
+    margin-top: 40px;
+    position: static;
+    margin-right: 550px;
+    top: 150px;
+    margin-bottom: 50px;
+}
+
+.leopard_h4{
+    font-size: larger;
+    margin-bottom: 40px;
+}
+.leopard_p3{
+    margin-bottom: 100px;
+
+}
+
+.leopard_pic1{
+    position: absolute;
+    left: 980px;
+    top: 450px;
+}
+
+.threats_to_leopard_heading{
+    margin-top: 200px;
+    margin-bottom: 7cqmin;
+    font-size: x-large;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.threat_to_leopard{
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.78;
+    position: static;
+    position: relative;
+    margin-bottom: 50px;
+
+}
+.threat_h4{
+    margin-bottom: 20px;
+    font-size: x-large;
+
+}
+
+.threat_p{
+    margin-bottom: 10px;
+}
+
+.threat_pic{
+    width: 750px;
+    margin-top: 20px;
+
+}
+
+.intro_sub_section{
+    border: 1px solid black;
+}
+
+.intro_sub_section_p{
+    margin-bottom: 10px;
+}
+
+@media(max-width:700px){
+    .leopards_subheading {
+        margin-top: 100px;
+        margin-bottom: 10px;
+        font-size: x-large;
+    }
+    .leopard_main{
+        align-content: center;
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    .leopard_h4{
+        text-align: center;
+    }
+
+    .threat_to_leopard{
+        text-align: center;
+    }
+
+    .threats_to_leopard_heading{
+        text-align: center;
+       align-items: center;
+       margin-left: 50px;
+    }
+
+    .leopard_pic1{
+        display: flex;
+        position: relative;
+        left: 7px;
+        top: 20px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .leopard_venue{
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: 300;
+        line-height: 1.78;
+        position: flex;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 70px;
+
+    }
+    .threat_pic{
+        display: flex;
+        width: 400px;
+        height: 370px;
+    }
+
+    .youtube_video_leopard {
+        margin-top: 90px;
+        width: 280px;
+        height: 280px;
+        margin-bottom: 10px;
+        align-items: center;
+        margin-left: 20px;
+
+    }
+
+    .intro_text {
+        text-align: center;
+        font-size: 1.125rem;
+        line-height: 1.3;
+        font-weight: 400;
+        font-size: x-large;
+        margin-top: 10px;
+        position: flex;
+        margin-right: 20px;
+        margin-top: 0px;
+        margin-bottom: 200px;
+    }
+    .intro_main{
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+
+    .national-parks {
+        margin-top: 30px
+    }
+    h3{
+        margin-top: auto;
+        text-align: center;
+        display: flex;
+        font-size: xx-large;        
+        font-weight: bold;
+    }
+
+    .intro_table{
+        font-family: "Roboto";
+        background-color: rgb(65, 62, 62);
+        text-align: center;
+        display: flex;
+        width: 400px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 100px;
+        border-bottom: 3px solid black;
+        align-items: center;
+        padding: none;
+        margin: auto;
+
+    }
+
+    .intro_image{
+            display: none;
+    }
+   
+}
+
+.animals_main{
+    font-family: 'Roboto';
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.78;
+    position: static;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.animals_h1{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.animals_h4{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: x-large;
+}
+
+.animals_main p{
+    margin-bottom: 30px;
+}
+
+.national_parks img{
+    margin-top: 40px;
+    width:450px;
+    padding: none;
+    margin-right: 40px;
+    border: black 8px solid;
+    margin-bottom: 80px;
+
+}
+
+.national_parks img:hover{
+    transform: scale(1.1);
+    padding: none;
+    transition: transform .4s;
+}
+
+.national_parks{
+    display: inline-flex;
+    margin-left: 280px;
+ 
+}
+
+.national_park_img2{
+    height: 300px;
+}
+.animals_back{
+    display: flex;
+    font-family: 'Roboto';
+    margin-top: 100px;
+    width: 100%;
+    height: 250px;
+    background-color:#556B2F;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin-left: none;
+    
+}
+
+.animals_back h1{
+    margin-left: 586px;
+    font-size: 40px;
+    color:white;
+
+}
+
+.national_park_h4{
+    font-weight: bolder;
+    font-size: larger;
+    margin-top: 40px;
+    margin-bottom: none;
+    text-align: center;
+}
+
+
+
+/*----------------------------------------------------*/
+
+  .container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .container .row {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  
+    overflow-x: hidden;
+  }
+  
+  .container .row .heading {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .container .row .box-slider {
+    position: relative;
+    height: 85%;
+    width: 100%;
+    padding: 50px 80px;
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+  
+    transform: skewX(5deg);
+  }
+  
+  .container .row .box-slider .img {
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    height: 100%;
+    width: calc(100% / 5);
+    transition: 0.5s linear;
+    overflow: hidden;
+  }
+  
+  .container .row .box-slider .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s linear;
+  }
+  
+  .container .row .box-slider .img:hover {
+    width: calc(100% / 0.5);
+  }
+  
+  .container .row .box-slider .img .info {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    color: #000;
+    font-weight: bold;
+    bottom: -100%;
+    transition: 0.3s linear;
+  }
+  
+  .container .row .box-slider .img:hover::before {
+    background: rgba(0, 0, 0, 0);
+  }
+  .container .row .box-slider .img::before {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    transition: 0.3s background linear;
+  }
+  .container .row .box-slider .img:hover .info {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .container .row .box-slider .img:hover .info {
+    bottom: 0;
+  }
+  
+  .newsletterSub {
+    margin-top: 50px;
+   text-align: center;
+  }
+  
+  #newsletterForm .email {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  #newsletterForm button {
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #2d2d2d8d;
+    color: #ffffff;
+    border: rgb(0, 0, 0) 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #confirmation-message {
+    margin-top: 10px;
+  }
+  

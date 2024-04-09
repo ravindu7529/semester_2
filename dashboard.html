@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscriptions</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="sri-lankan-wildlife-high-resolution-logo-transparent (1).png" alt="">
+        <nav>
+            
+            <section class="wrapper">
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" margin-right="-100px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="eHome.html">Home</a></li>
+                    <li><a href="eIntro.html">Intro</a></li>
+                    <li><a href="eConservation.html">Conservation</a></li>
+                    <li><a href="eLeopard.html">Leopard</a></li>
+                    <li><a href="eAnimals.html">Animals</a></li>
+                    <li><a href="eYala.html">Yala</a></li>
+                    <li><a href="eWilpathu.html">Wilpathu</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li id="admin"><a href="dashboard.html">Subscriptions</a></li>
+
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"><a href="eHome.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="eIntro.html">Intro</a></li>
+                    <li class="hideOnMobile"><a href="eConservation.html">Conservation</a></li>
+                    <li class="hideOnMobile"><a href="eLeopard.html">Leopard</a></li>
+                    <li class="hideOnMobile"><a href="eAnimals.html">Animals</a></li>
+                    <li class="hideOnMobile"><a href="eYala.html">Yala</a></li>
+                    <li class="hideOnMobile"><a href="eWilpathu.html">Wilpathu</a></li>
+                    <li class="hideOnMobile"><a href="login.html">Login</a></li>
+                    <li id="admin"><a href="dashboard.html" >Subscriptions</a></li>
+                    <li onclick="showSidebar()" class="menuButton"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+    <h2 class="heading">Newsletter Subscriptions</h2>
+    <table id="subscriptionsTable">
+        <thead>
+            <tr>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <script src="./dashboard.js"></script>
+</body>
+</html>

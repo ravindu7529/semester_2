@@ -1,0 +1,40 @@
+{
+  "title": "Introduction",
+  "description": "Sri Lanka, an island nation located in South Asia, is renowned for its rich biodiversity and diverse ecosystems. The wildlife in Sri Lanka is both unique and fascinating, making it a popular destination for nature enthusiasts and wildlife lovers. The country's varied landscapes, which include dense forests, lush wetlands, and coastal areas, contribute to the diverse range of flora and fauna found in Sri Lanka",
+ 
+  "title1": "National Parks and Reserves",
+  "data1": "Sri Lanka is home to numerous national parks and wildlife reserves, each offering a glimpse into the country's natural treasures. Yala National Park, Wilpattu National Park, and Udawalawe National Park are some of the prominent wildlife sanctuaries where visitors can witness a wide array of species in their natural habitats.",
+  
+  "title2": "Minneriya National Park",
+  "data2": "Famous for the gathering of large herds of elephants, Minneriya National Park is located in the North Central Province. The annual 'Elephant Gathering' attracts visitors to witness hundreds of elephants",
+  
+  
+  "title3": "Sinharaja Forest Reserve",
+  "data3": "Designated as a UNESCO World Heritage Site, Sinharaja is a primary tropical rainforest in the southwest of Sri Lanka. It is rich in biodiversity, with many endemic species of birds, insects, amphibians, and reptiles",
+ 
+  
+  "title4": "Horton Plains National Park",
+  "data4": "This park is located in the central highlands and is characterized by montane grasslands and cloud forests. Horton Plains is home to unique flora and fauna, including the elusive Sri Lankan leopard",
+
+  "nationalPark": "National Park",
+  "animal": "Animals",
+  "facts": "Unique facts about the Animal",
+
+
+  "nationalPark1": "Minneriya National Park",
+  "animal1": "Elephant",
+  "facts1": "Asian elephants are known for their high level of intelligence and are considered one of the most intelligent species on Earth",
+ 
+
+  "nationalPark2": "Sinharaja Forest",
+  "animal2": "Blue Magpie",
+  "facts2": "Blue Magpies are known for their impressive vocal mimicry skills. They can imitate a variety of sounds, including the calls of other bird species and even human-made noises",
+  
+  
+  "nationalPark3": "Horton Plains",
+  "animal3": "Leopard",
+  "facts3": "One of the most remarkable aspects of leopard behavior is their ability to adapt to various environments, from dense rainforests to arid deserts. This adaptability extends to their hunting techniques as well. Leopards are skilled climbers and often hoist their kills into the branches of trees to avoid scavengers like hyenas and lions",
+    
+  "nav1":"Home"
+  
+}

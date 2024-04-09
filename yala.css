@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+nav{
+    width: 100%;
+    height: 120px;
+    background-color:#000000;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    position: initial;
+    margin-top: none;
+    
+}
+
+
+nav ul{
+list-style: none;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin-left: 85px;
+
+}
+
+ul li{
+    height: 72px;
+    margin-top: 20px;
+}
+
+ul li a{
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Roboto";
+    color: #5a5858;
+    font-weight: 500;
+
+}
+
+ul li a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.567);
+    box-shadow: -10px 0 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar li a{
+    width: 100%;
+}
+
+
+.logo{
+    width: 80px;
+    position: absolute;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+
+.menuButton{
+    display: none;
+}
+
+
+@media(max-width:770px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menuButton{
+        display: block;
+    }
+
+}
+    
+@media(max-width:490px){
+    .sidebar{
+        width: 100%;
+    }
+}
+body{
+    background-image: url(yalaBackground1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat, repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover,cover;
+    margin-top: 0;
+    font-family: 'Roboto';
+    overflow-x: hidden;
+}
+
+
+
+
+.yala_h1{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 300px;
+    color: rgba(255, 255, 255, 0.592);
+    font-size: 90px;
+    
+}
+
+.about_yala{
+    padding: 120px;
+    background-color: rgba(0, 0, 0, 0.977);
+    margin-top:600px;
+    color: white;
+    margin-bottom: 30px;
+    
+}
+
+.about_yala h2{
+   text-align: center;
+}
+
+.about_yala p{
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.78;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 70px;
+    ;
+}
+
+.yala_images_h2{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+
+}
+
+.container{
+    position: relative;
+    top: 280px;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    background-color: #f5f5f5;
+    
+}
+
+@media(max-width:700px){
+    .container{
+        display: none;
+    }
+}
+
+.container .slide .item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide .item:nth-child(3){
+    left: 50%;
+}
+.slide .item:nth-child(4){
+    left: calc(50% + 220px);
+}
+.slide .item:nth-child(5){
+    left: calc(50% + 440px);
+}
+
+/* here n = 0, 1, 2, 3,... */
+.slide .item:nth-child(n + 6){
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+
+
+.item .content{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    color: #eee;
+    transform: translate(0, -50%);
+    font-family: system-ui;
+    display: none;
+}
+
+
+.slide .item:nth-child(2) .content{
+    display: block;
+}
+
+
+.content .name{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.content .des{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.content button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+.buttonSlider{
+    top:5px;
+    left: 10px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+@media(max-width:800px){
+    .buttonSlider{
+        display: hidden;
+    }
+    .buttonSlider button{
+        display: hidden;
+    }
+}
+
+.buttonSlider button{
+
+    width: 50px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+
+.buttonSlider button:hover{
+    background: #ababab;
+    color: #fff;
+}
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+
+}
+
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    color: black;
+    font-size: 2em;
+    opacity: 0.9;
+
+}
+
+/*hover effect on social media*/
+.socialIcons a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+
+}
+
+.footerNav ul{
+    display:ruby-base;
+    justify-content: center;
+    list-style-type: none;
+ 
+}
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 0.5s;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #000;
+
+}
+
+.footerBottom p{
+    color: white;
+     overflow: hidden;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+    text-align: center;
+}
+
+@media (max-width:700px) {
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .container{
+        display: hidden;
+    }
+
+}
+
+.newsletterSub {
+    margin-top: 50px;
+   text-align: center;
+  }
+  
+  #newsletterForm .email {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  #newsletterForm button {
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #2d2d2d8d;
+    color: #ffffff;
+    border: rgb(0, 0, 0) 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #confirmation-message {
+    margin-top: 10px;
+  }
+  
+
+  

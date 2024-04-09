@@ -1,0 +1,17 @@
+{
+    "name": "WDOS final Assigment",
+    "short_name": "WDOS 2",
+    "start_url" : "./index.html",
+    "description":"First year semester 2 assigment",
+    "icons": [
+        {
+            "src": "/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
